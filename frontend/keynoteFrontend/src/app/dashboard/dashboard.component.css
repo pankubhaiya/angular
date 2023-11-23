@@ -1,0 +1,55 @@
+/* Dashboard container */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* User header */
+.user-header {
+  margin-bottom: 20px;
+}
+
+/* Content area */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.user-list {
+  width: 100%;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.user-details-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.label-item {
+  flex: 1;
+  text-align: center;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.detail-item {
+  flex: 1;
+  text-align: center;
+}

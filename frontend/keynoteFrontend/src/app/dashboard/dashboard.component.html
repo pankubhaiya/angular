@@ -1,0 +1,27 @@
+<div class="dashboard">
+    <div class="user-header">
+      <p>Welcome, {{ loggedInUserName || 'Guest' }}</p>
+    </div>
+    <div class="content">
+      <h2>DashBoard</h2>
+      <div class="user-list">
+        <div class="user-details-header">
+          <div class="label-item">Name</div>
+          <div class="label-item">Email</div>
+          <div class="label-item">Date of Birth</div>
+          <div class="label-item">Active Status</div>
+          <!-- Add more labels as needed -->
+        </div>
+        <div *ngFor="let user of allUsers" class="user-item">
+          <div class="user-details">
+            <div class="detail-item">{{ user.name }}</div>
+            <div class="detail-item">{{ user.email || 'No email available' }}</div>
+            <div class="detail-item">{{ user.dob || 'No Date of Birth available' }}</div>
+            <div class="detail-item">{{ user.activeStatus || 'Not Available' }}</div>
+            <!-- Add more user details as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
