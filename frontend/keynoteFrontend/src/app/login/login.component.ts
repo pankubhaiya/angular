@@ -17,7 +17,7 @@ export class LoginComponent {
   constructor(private apiService: ApiService, private http: HttpClient, private router: Router) {}
 
   login() {
-    const apiUrl = 'http://localhost:9090/user/login'; // Replace with your Node.js login endpoint
+    const apiUrl = 'http://localhost:9090/user/login';
 
     const credentials = {
       email: this.email,
