@@ -66,7 +66,7 @@ userRouter.post("/login", async (req, res) => {
     }
   });
 
-  userRouter.get("/alldata",authorization, async (req, res) => {
+  userRouter.get("/alldata",async (req, res) => {
     try {
       
        const result = await usermodel.find({},{password:0})
